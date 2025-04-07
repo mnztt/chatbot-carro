@@ -1,1 +1,10 @@
 nltk
+scikit-learn
+pandas
+numpy
+flask         # se estiver usando API  # já vem com Python, não precisa instalar
+joblib        # para salvar/carregar modelos
+requests
+beautifulsoup4
+lxml
+python-dotenv # se usar variáveis de ambiente

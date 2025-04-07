@@ -1,0 +1,38 @@
+[
+    { "frase": "oi", "intencao": "saudacao" },
+    { "frase": "olá", "intencao": "saudacao" },
+    { "frase": "bom dia", "intencao": "saudacao" },
+    { "frase": "tchau", "intencao": "despedida" },
+    { "frase": "adeus", "intencao": "despedida" },
+    { "frase": "até logo", "intencao": "despedida" },
+    { "frase": "como você está", "intencao": "sentimento" },
+    { "frase": "tudo bem", "intencao": "sentimento" },
+    { "frase": "está bem", "intencao": "sentimento" },
+    { "frase": "qual é o seu nome", "intencao": "nome" },
+    { "frase": "quem é você", "intencao": "nome" },
+    { "frase": "como se chama", "intencao": "nome" },
+  
+    { "frase": "quero um carro até 30 mil", "intencao": "busca_preco" },
+    { "frase": "carro de até 50 mil", "intencao": "busca_preco" },
+    { "frase": "procuro um carro até 100 mil", "intencao": "busca_preco" },
+    { "frase": "tem carro na faixa de 40 mil?", "intencao": "busca_preco" },
+    { "frase": "qual carro consigo por 60 mil?", "intencao": "busca_preco" },
+    { "frase": "carro barato", "intencao": "busca_preco" },
+  
+    { "frase": "quero um Onix", "intencao": "busca_modelo" },
+    { "frase": "tem Kwid?", "intencao": "busca_modelo" },
+    { "frase": "procuro um Corolla", "intencao": "busca_modelo" },
+    { "frase": "me mostra um Civic", "intencao": "busca_modelo" },
+  
+    { "frase": "esse carro tem ar condicionado?", "intencao": "busca_opcionais" },
+    { "frase": "ele tem direção elétrica?", "intencao": "busca_opcionais" },
+    { "frase": "possui airbag?", "intencao": "busca_opcionais" },
+  
+    { "frase": "gostei desse carro", "intencao": "interesse_compra" },
+    { "frase": "quero comprar", "intencao": "interesse_compra" },
+    { "frase": "vou levar esse", "intencao": "interesse_compra" },
+    { "frase": "esse carro me interessa", "intencao": "interesse_compra" },
+    { "frase": "como faço pra comprar", "intencao": "interesse_compra" },
+    { "frase": "quero esse carro", "intencao": "interesse_compra" }
+  ]
+  

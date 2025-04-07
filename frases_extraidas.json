@@ -1,0 +1,1022 @@
+[
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro saveiro",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen saveiro?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro tracker",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet tracker?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um honda",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fit",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum honda fit?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro strada",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat strada?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro cronos",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat cronos?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fox",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen fox?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro onix",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet onix?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro saveiro",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen saveiro?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro gol",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen gol?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro t-cross",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen t-cross?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro doblo",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat doblo?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro mobi",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat mobi?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro mobi",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat mobi?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um renault",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro kwid",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum renault kwid?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro crossfox",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen crossfox?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20x",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20x?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro uno",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat uno?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um renault",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro kwid",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum renault kwid?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ecosport",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ecosport?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um toyota",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro yaris",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum toyota yaris?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ka",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ka?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro idea",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat idea?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro zafira",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet zafira?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro siena",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat siena?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fiesta",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford fiesta?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro uno",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat uno?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro tracker",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet tracker?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro toro",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat toro?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro voyage",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen voyage?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro uno",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat uno?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20s",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20s?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro crossfox",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen crossfox?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro onix",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet onix?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um renault",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro sandero",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum renault sandero?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro uno",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat uno?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um renault",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro sandero",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum renault sandero?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro strada",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat strada?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro onix",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet onix?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ka",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ka?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um citroën",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ds5",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum citroën ds5?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um citroën",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro c3",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum citroën c3?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um peugeot",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro 207",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum peugeot 207?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um honda",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro city",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum honda city?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro argo",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat argo?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro nivus",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen nivus?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro jetta",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen jetta?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro agile",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet agile?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fox",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen fox?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um jeep",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro compass",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum jeep compass?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro classic",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet classic?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um honda",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro civic",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum honda civic?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro polo",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen polo?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um toyota",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hilux",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum toyota hilux?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro onix",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet onix?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro jetta",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen jetta?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um citroën",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro c3",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum citroën c3?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro golf",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen golf?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro cruze",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet cruze?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ka",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ka?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fiesta",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford fiesta?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um honda",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fit",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum honda fit?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro cruze",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet cruze?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um nissan",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro versa",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum nissan versa?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro strada",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat strada?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro creta",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai creta?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro argo",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat argo?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ecosport",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ecosport?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro cruze",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet cruze?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro s10",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet s10?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ecosport",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ecosport?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um chevrolet",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro tracker",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum chevrolet tracker?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um jeep",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro renegade",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum jeep renegade?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro fusca",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen fusca?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um fiat",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro 500",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum fiat 500?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um ford",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro ranger",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum ford ranger?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um hyundai",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro hb20",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum hyundai hb20?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro polo",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen polo?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um bmw",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro 335ia",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum bmw 335ia?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um volkswagen",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro voyage",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum volkswagen voyage?",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um renault",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "procuro duster",
+    "intencao": "busca_modelo"
+  },
+  {
+    "frase": "tem algum renault duster?",
+    "intencao": "busca_modelo"
+  }
+]
