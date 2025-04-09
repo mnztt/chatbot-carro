@@ -124,6 +124,54 @@
     "intencao": "interesse_compra"
   },
   {
+    "frase": " ar condicionado",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comar condicionado?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " direção hidráulica",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comdireção hidráulica?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " travas elétricas",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comtravas elétricas?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " vidros elétricos",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comvidros elétricos?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " rodas de liga leve",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comrodas de liga leve?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " air bag duplo",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comair bag duplo?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "quero um volkswagen",
     "intencao": "busca_modelo"
   },
@@ -136,6 +184,86 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " chave reserva",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comchave reserva?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " desembaçador traseiro",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comdesembaçador traseiro?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " limpador traseiro",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comlimpador traseiro?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " computador de bordo",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcomputador de bordo?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " sensor de estacionamento",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comsensor de estacionamento?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " ar quente",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comar quente?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " direção elétrica",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comdireção elétrica?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " air bag motorista",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comair bag motorista?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " alarme",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comalarme?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " freios abs",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comfreios abs?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "quero um chevrolet",
     "intencao": "busca_modelo"
   },
@@ -146,6 +274,94 @@
   {
     "frase": "tem algum chevrolet tracker?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " câmera da ré",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcâmera da ré?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " cd player",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcd player?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " faróis de neblina",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comfaróis de neblina?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " volante c/ regulagem de altura",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comvolante c/ regulagem de altura?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " apoio de braço",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comapoio de braço?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " bancos dianteiros com ajuste de altura",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro combancos dianteiros com ajuste de altura?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " comando inter. tamp-tanque",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcomando inter. tamp-tanque?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " espelhos elétricos",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comespelhos elétricos?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " volante multifuncional",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comvolante multifuncional?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " bancos em couro",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro combancos em couro?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " vidros verdes",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comvidros verdes?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "quero um honda",
@@ -172,6 +388,38 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " central multimídia",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcentral multimídia?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " câmbio de 6 marchas",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcâmbio de 6 marchas?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " distribuição eletrônica de frenagem",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comdistribuição eletrônica de frenagem?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " encosto de cabeça traseiro",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comencosto de cabeça traseiro?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro cronos",
     "intencao": "busca_modelo"
   },
@@ -188,6 +436,46 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " banco do motorista com ajuste de altura",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro combanco do motorista com ajuste de altura?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " isofix",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comisofix?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " air bag de curtina (laterais e frontais)",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comair bag de curtina (laterais e frontais)?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " alça de segurança (as)",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comalça de segurança (as)?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " controle de estabilidade",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcontrole de estabilidade?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro onix",
     "intencao": "busca_modelo"
   },
@@ -202,6 +490,30 @@
   {
     "frase": "tem algum volkswagen gol?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " volante escamoteável",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comvolante escamoteável?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " start stop",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comstart stop?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " controle de tração",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcontrole de tração?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "procuro t-cross",
@@ -226,6 +538,46 @@
   {
     "frase": "tem algum fiat mobi?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " interface bluetooth",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro cominterface bluetooth?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " assist. partida em rampa",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comassist. partida em rampa?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " monitoramento de pressâo /pneus",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro commonitoramento de pressâo /pneus?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " comando inter. port-malas",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcomando inter. port-malas?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " banco traseiro rebatível",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro combanco traseiro rebatível?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "quero um renault",
@@ -268,12 +620,52 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " banco bi-partido",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro combanco bi-partido?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro uno",
     "intencao": "busca_modelo"
   },
   {
     "frase": "tem algum fiat uno?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " teto solar",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comteto solar?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " faróis c/ acendimento aut.",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comfaróis c/ acendimento aut.?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " chave presencial",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comchave presencial?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " luz inter. port-malas",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comluz inter. port-malas?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "quero um ford",
@@ -298,6 +690,14 @@
   {
     "frase": "tem algum toyota yaris?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " mp3 player",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro commp3 player?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "procuro ka",
@@ -340,6 +740,46 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " direção assistida",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comdireção assistida?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " freio a disco",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comfreio a disco?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " gps.",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comgps.?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " controle automático de velocidade",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comcontrole automático de velocidade?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " lona marítima",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comlona marítima?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro toro",
     "intencao": "busca_modelo"
   },
@@ -356,6 +796,38 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " limp. para-brisa aut",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comlimp. para-brisa aut?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " sensor de estacionamento diant/traseiro",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comsensor de estacionamento diant/traseiro?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " ar condicionado digital",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comar condicionado digital?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " foto laudo",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comfoto laudo?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro hb20s",
     "intencao": "busca_modelo"
   },
@@ -370,6 +842,30 @@
   {
     "frase": "tem algum renault sandero?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " ar condicionado dual zone",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comar condicionado dual zone?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " porta luvas climatizado",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comporta luvas climatizado?",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": " retrovisor fotocrômico",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comretrovisor fotocrômico?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "quero um citroën",
@@ -444,6 +940,14 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " retrovisores elétricos",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comretrovisores elétricos?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "quero um jeep",
     "intencao": "busca_modelo"
   },
@@ -454,6 +958,14 @@
   {
     "frase": "tem algum jeep compass?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " ipva pago",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comipva pago?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "procuro classic",
@@ -532,6 +1044,14 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " tração 4x4",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comtração 4x4?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "procuro renegade",
     "intencao": "busca_modelo"
   },
@@ -564,6 +1084,14 @@
     "intencao": "busca_modelo"
   },
   {
+    "frase": " blindado",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comblindado?",
+    "intencao": "busca_opcional"
+  },
+  {
     "frase": "quero um bmw",
     "intencao": "busca_modelo"
   },
@@ -574,6 +1102,14 @@
   {
     "frase": "tem algum bmw 335ia?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": " engate de carretinha",
+    "intencao": "busca_opcional"
+  },
+  {
+    "frase": "tem algum carro comengate de carretinha?",
+    "intencao": "busca_opcional"
   },
   {
     "frase": "procuro duster",

@@ -33,6 +33,15 @@ def criar_banco():
     )
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS opcionais (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        veiculo_id INTEGER,
+        opcional TEXT,
+        FOREIGN KEY (veiculo_id) REFERENCES veiculos(id)
+    )
+    """)
+
     conn.commit()
     conn.close()
 
@@ -47,6 +56,27 @@ def get_total_paginas():
 def limpar_km(km):
     return km.strip().split("km")[0].replace(".", "") + " km"
 
+def extrair_detalhes(link):
+    res = requests.get(link, headers=HEADERS)
+    soup = BeautifulSoup(res.text, "html.parser")
+
+    detalhes = {}
+
+    ficha_box = soup.select(".col-4 .ficha-box")
+    for item in ficha_box:
+        titulo = item.select_one(".tt-title").text.strip().lower()
+        descricao = item.select_one(".tt-description").text.strip()
+        detalhes[titulo] = descricao
+
+    opcionais = []
+    for li in soup.select(".dmi-opcionais.collapsible ul li"):
+        opcional = li.text.strip()
+        if opcional:
+            opcionais.append(opcional)
+    detalhes["opcionais"] = opcionais
+
+    return detalhes
+
 def scrape_site():
     criar_banco()
     total = get_total_paginas()
@@ -54,7 +84,6 @@ def scrape_site():
 
     conn = sqlite3.connect("carros.db")
     cursor = conn.cursor()
-
     frases_geradas = []
 
     for pagina in range(1, total + 1):
@@ -70,15 +99,50 @@ def scrape_site():
                 preco = card.select_one(".tt-price").text.strip()
                 quilometragem = limpar_km(card.select_one(".tt-km").text.strip())
                 imagem = card.select_one(".tt-image-box")["style"].split("url('")[1].split("')")[0]
-                marca_modelo = titulo.split()
-                marca = marca_modelo[0]
-                modelo = " ".join(marca_modelo[1:])
+                link_veiculo = card.select_one(".tt-img")["href"]
+                if link_veiculo.startswith("/"):
+                     link_veiculo = "https://adelveiculos.com.br" + link_veiculo
+
+
+                detalhes = extrair_detalhes(link_veiculo)
+
+                marca = detalhes.get("marca", titulo.split()[0])
+                modelo = detalhes.get("modelo", " ".join(titulo.split()[1:]))
 
                 cursor.execute("""
-                INSERT OR IGNORE INTO veiculos (imagem, titulo, descricao, ano_modelo, preco, quilometragem,
-                marca, modelo, carroceria, motor, cor, ano, cambio, revisado)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, '', '', '', '', '', '')
-                """, (imagem, titulo, descricao, ano_modelo, preco, quilometragem, marca, modelo))
+                INSERT OR IGNORE INTO veiculos (
+                    imagem, titulo, descricao, ano_modelo, preco, quilometragem,
+                    marca, modelo, carroceria, motor, cor, ano, cambio, revisado
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    imagem, titulo, descricao, ano_modelo, preco, quilometragem,
+                    marca, modelo,
+                    detalhes.get("carroceria", ""),
+                    detalhes.get("motor", ""),
+                    detalhes.get("cor", ""),
+                    detalhes.get("ano", ""),
+                    detalhes.get("câmbio", ""),
+                    detalhes.get("revisado", "")
+                ))
+
+                veiculo_id = cursor.lastrowid
+
+                if not veiculo_id:
+                    cursor.execute("SELECT id FROM veiculos WHERE titulo=? AND ano_modelo=? AND preco=?",
+                                   (titulo, ano_modelo, preco))
+                    veiculo_id = cursor.fetchone()[0]
+
+                opcionais = detalhes.get("opcionais", [])
+                for opcional in opcionais:
+                    cursor.execute("""
+                    INSERT INTO opcionais (veiculo_id, opcional) VALUES (?, ?)
+                    """, (veiculo_id, opcional))
+                    
+                    frases_geradas.extend([
+                    {"frase": f" {opcional.lower()}", "intencao": "busca_opcional"},
+                    {"frase": f"tem algum carro com{opcional.lower()}?", "intencao": "busca_opcional"}
+                ])
+                    
 
                 frases_geradas.extend([
                     {"frase": f"quero um {marca.lower()}", "intencao": "busca_modelo"},
@@ -87,17 +151,18 @@ def scrape_site():
                 ])
 
                 conn.commit()
-                time.sleep(1)
+                print(f"✓ Veículo salvo: {titulo} | {len(opcionais)} opcionais")
+                time.sleep(0.5)
 
             except Exception as e:
-                print(f"Erro na página {pagina}: {e}")
+                print(f"Erro ao processar carro na página {pagina}: {e}")
 
     conn.close()
 
     with open("frases_extraidas.json", "w", encoding="utf-8") as f:
         json.dump(frases_geradas, f, ensure_ascii=False, indent=2)
 
-    print("Scraping finalizado e frases geradas.")
+    print("Scraping finalizado. Frases salvas em frases_extraidas.json.")
 
 if __name__ == "__main__":
     scrape_site()
