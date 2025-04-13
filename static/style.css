@@ -1,0 +1,85 @@
+:root {
+    --azul-claro: #e6f0ff;
+    --azul-medio: #3498db;
+    --azul-escuro: #2c3e50;
+    --branco: #ffffff;
+    --cinza-claro: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    max-width: 600px;
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+}
+
+#TituloPrincipal {
+    text-align: center;
+    color: var(--azul-escuro);
+    margin-bottom: 30px;
+}
+
+#chat {
+    border: 2px solid var(--azul-medio);
+    background: var(--branco);
+    padding: 15px;
+    height: 400px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.usuario {
+    background-color: var(--azul-medio);
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot {
+    background-color: var(--cinza-claro);
+    color: var(--azul-escuro);
+    text-align: left;
+    margin-right: auto;
+}
+
+#pergunta {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid var(--azul-medio);
+    border-radius: 8px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+#enviar {
+    padding: 12px 20px;
+    background-color: var(--azul-escuro);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#enviar:hover {
+    background-color: var(--azul-medio);
+}
+
+h1 {
+    font-size: 28px;
+}

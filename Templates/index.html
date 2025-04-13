@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot de Carros</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0 auto; padding: 20px; max-width: 600px; }
-        #chat { border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: scroll; background: #f9f9f9; }
-        .mensagem { margin: 10px 0; }
-        .usuario { text-align: right; color: blue; }
-        .bot { text-align: left; color: green; }
-        #pergunta { width: 80%; padding: 10px; }
-        #enviar { padding: 10px 20px; }
-        #TituloPrincipal { text-align: center; color: #333; }
-        h1 { font-size: 24px; margin-bottom: 20px; }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1 id="TituloPrincipal">Busca de Carros</h1>
@@ -29,7 +19,6 @@
                 let mensagem = $("#pergunta").val().trim();
                 if(mensagem === "") return;
 
-                // Exibe a mensagem do usuário
                 $("#chat").append(`<div class='mensagem usuario'><strong>Você:</strong> ${mensagem}</div>`);
                 $("#pergunta").val("");
 
