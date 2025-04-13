@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Carros</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0 auto; padding: 20px; max-width: 600px; }
+        #chat { border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: scroll; background: #f9f9f9; }
+        .mensagem { margin: 10px 0; }
+        .usuario { text-align: right; color: blue; }
+        .bot { text-align: left; color: green; }
+        #pergunta { width: 80%; padding: 10px; }
+        #enviar { padding: 10px 20px; }
+        #TituloPrincipal { text-align: center; color: #333; }
+        h1 { font-size: 24px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1 id="TituloPrincipal">Busca de Carros</h1>
+    <div id="chat"></div>
+    <input type="text" id="pergunta" placeholder="Digite sua pergunta..." autocomplete="off">
+    <button id="enviar">Enviar</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#enviar").click(function(){
+                let mensagem = $("#pergunta").val().trim();
+                if(mensagem === "") return;
+
+                // Exibe a mensagem do usuário
+                $("#chat").append(`<div class='mensagem usuario'><strong>Você:</strong> ${mensagem}</div>`);
+                $("#pergunta").val("");
+
+                $.ajax({
+                    url: "/chat",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ mensagem: mensagem }),
+                    success: function(data){
+                        $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> ${data.resposta}</div>`);
+                        $("#chat").scrollTop($("#chat")[0].scrollHeight);
+                    },
+                    error: function(){
+                        $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> Erro ao processar sua pergunta.</div>`);
+                    }
+                });
+            });
+
+            // Permitir Enter para enviar
+            $("#pergunta").keypress(function(e){
+                if(e.which === 13){
+                    $("#enviar").click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

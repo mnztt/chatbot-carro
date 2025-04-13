@@ -106,10 +106,11 @@ def responder(intencao, texto):
     return "Desculpe, não entendi."
 
 # Loop principal
-while True:
-    entrada = input("Você: ").strip()
-    if entrada.lower() in ["sair", "exit", "tchau"]:
-        print("Bot: Até mais!")
+if __name__ == "__main__":
+    while True:
+        entrada = input("Você: ").strip()
+        if entrada.lower() in ["sair", "exit", "tchau"]:
+            print("Bot: Até mais!")
         break
 
     # Detecta CPF
