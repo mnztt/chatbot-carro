@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1 id="TituloPrincipal">Busca de Carros</h1>
+    <h1 id="TituloPrincipal">Faça uma pergunta</h1>
     <div id="chat"></div>
     <input type="text" id="pergunta" placeholder="Digite sua pergunta..." autocomplete="off">
     <button id="enviar">Enviar</button>
@@ -18,6 +18,8 @@
             $("#enviar").click(function(){
                 let mensagem = $("#pergunta").val().trim();
                 if(mensagem === "") return;
+
+                $("#chat").show();
 
                 $("#chat").append(`<div class='mensagem usuario'><strong>Você:</strong> ${mensagem}</div>`);
                 $("#pergunta").val("");

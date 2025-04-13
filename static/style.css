@@ -11,9 +11,10 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     padding: 20px;
-    max-width: 600px;
+    max-width: 700px;
     background-color: var(--azul-claro);
     color: var(--azul-escuro);
+    border-radius: 10px;
 }
 
 #TituloPrincipal {
@@ -30,6 +31,8 @@ body {
     overflow-y: scroll;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    display: none;
 }
 
 .mensagem {
@@ -38,6 +41,7 @@ body {
     border-radius: 10px;
     max-width: 80%;
     word-wrap: break-word;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .usuario {
@@ -45,6 +49,7 @@ body {
     color: white;
     text-align: right;
     margin-left: auto;
+    width: 20%;
 }
 
 .bot {
@@ -55,7 +60,7 @@ body {
 }
 
 #pergunta {
-    width: 75%;
+    width: 82%;
     padding: 12px;
     border: 1px solid var(--azul-medio);
     border-radius: 8px;
