@@ -32,6 +32,7 @@ def chat():
             intencao = modelo.predict(entrada_vec)[0]
 
     resposta = responder(intencao, user_input)
+    print(resposta)
     return jsonify({"resposta": resposta})
 
 if __name__ == "__main__":
