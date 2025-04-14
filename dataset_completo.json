@@ -124,6 +124,90 @@
     "intencao": "interesse_compra"
   },
   {
+    "frase": "boa tarde",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "boa noite",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "e aí",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "fala aí",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "fala comigo",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "tudo bem?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "beleza?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "como vai?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "salve",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "opa",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "oi, tudo certo?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "oi, pode me ajudar?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "olá, estou procurando um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "bom dia, tem algum carro disponível?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "oi, estou interessado em um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "boa tarde, você pode me mostrar os modelos?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "oi, quero ver os preços dos carros",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "olá, quais carros você tem?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "oi, gostaria de fazer uma simulação",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "fala parceiro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "fala bot",
+    "intencao": "saudacao"
+  },
+  {
     "frase": " ar condicionado",
     "intencao": "busca_opcional"
   },
@@ -1118,5 +1202,173 @@
   {
     "frase": "tem algum renault duster?",
     "intencao": "busca_modelo"
+  },
+  {
+    "frase": "quero um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "estou procurando um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os carros",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero comprar um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "gostaria de ver os modelos",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero simular um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver opções de carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os veículos",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "me mostra os carros",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "me ajuda a escolher um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os carros disponíveis",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "estou interessado em um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "tem algum carro aí?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "me mostra os carros que você tem",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "estou querendo comprar um carro",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os carros que você vende",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os carros com melhor preço",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "tem algum carro bom aí?",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero ver os carros mais baratos",
+    "intencao": "saudacao"
+  },
+  {
+    "frase": "quero comprar",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "vou comprar esse",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "vou querer esse carro",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero esse veículo",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "esse me interessou",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "me interessa",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "amei esse carro",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "gostei, quero simular",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero simular",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero esse carro",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "esse é o carro que quero",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "vou fechar esse",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero fechar com esse modelo",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero saber entrada e parcelas",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "como faço pra comprar esse?",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "quero financiar esse",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "gostei muito, quero comprar",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "vou querer esse",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "curti, bora fechar",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "esse é meu",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "como faço pra levar esse?",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "dá pra simular pra mim?",
+    "intencao": "interesse_compra"
+  },
+  {
+    "frase": "esse é top, me manda as parcelas",
+    "intencao": "interesse_compra"
   }
 ]

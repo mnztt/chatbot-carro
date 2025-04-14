@@ -4,6 +4,8 @@
     --azul-escuro: #2c3e50;
     --branco: #ffffff;
     --cinza-claro: #f4f4f4;
+    --verde-sucesso: #28a745;
+    --laranja: #ff9800;
 }
 
 body {
@@ -18,74 +20,103 @@ body {
 }
 
 #TituloPrincipal {
+    font-size: 24px;
     text-align: center;
-    color: var(--azul-escuro);
-    margin-bottom: 30px;
 }
 
 #chat {
-    border: 2px solid var(--azul-medio);
-    background: var(--branco);
-    padding: 15px;
-    height: 400px;
-    overflow-y: scroll;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    display: none;
-    height: 650px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha as mensagens à esquerda */
 }
 
 .mensagem {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
-    border-radius: 10px;
-    max-width: 80%;
+    border-radius: 5px;
     word-wrap: break-word;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 70%; /* Largura das mensagens */
 }
 
-.usuario {
-    background-color: var(--azul-medio);
-    color: white;
-    text-align: right;
-    margin-left: auto;
-    width: 20%;
-}
-
-.bot {
-    background-color: var(--cinza-claro);
-    color: var(--azul-escuro);
+.mensagem.bot {
+    background-color: #f1f1f1;
     text-align: left;
-    margin-right: auto;
+    align-self: flex-start; /* Faz a resposta do bot ir para a esquerda */
+}
+
+.mensagem.usuario {
+    background-color: #e0e0e0;
+    text-align: right;
+    align-self: flex-end; /* Faz a mensagem do usuário ir para a direita */
+    max-width: 70%; /* Limita a largura da mensagem do usuário */
 }
 
 #pergunta {
-    width: 82%;
-    padding: 12px;
-    border: 1px solid var(--azul-medio);
-    border-radius: 8px;
-    margin-top: 15px;
-    outline: none;
-    font-size: 16px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 #enviar {
-    padding: 12px 20px;
-    background-color: var(--azul-escuro);
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
 }
 
 #enviar:hover {
-    background-color: var(--azul-medio);
+    background-color: #45a049;
 }
 
-h1 {
-    font-size: 28px;
+/* Estilo do Card */
+.card {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.imagem-veiculo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.info-veiculo {
+    flex: 1;
+}
+
+.info-veiculo h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.info-veiculo p {
+    color: #666;
+    font-size: 14px;
+}
+
+.info-veiculo .preco {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-veiculo .parcelas {
+    color: #FF5722;
+    font-size: 16px;
 }

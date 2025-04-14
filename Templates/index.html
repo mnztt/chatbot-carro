@@ -5,52 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot de Carros</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Adicionei o CSS completo, conforme mencionado acima */
+    </style>
 </head>
-<h1 id="TituloPrincipal">Faça uma pergunta</h1>
-<div id="chat"></div>
-<input type="text" id="pergunta" placeholder="Digite sua pergunta..." autocomplete="off">
-<button id="enviar">Enviar</button>
+<body>
+    <h1 id="TituloPrincipal">Faça uma pergunta</h1>
+    <div id="chat"></div>
+    <input type="text" id="pergunta" placeholder="Digite sua pergunta..." autocomplete="off">
+    <button id="enviar">Enviar</button>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function(){
-        let primeiraMensagem = true;
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let primeiraMensagem = true;
 
-        $("#enviar").click(function(){
-            let mensagem = $("#pergunta").val().trim();
-            if(mensagem === "") return;
+            $("#enviar").click(function(){
+                let mensagem = $("#pergunta").val().trim();
+                if(mensagem === "") return;
 
-            $("#chat").show();
+                $("#chat").show();
+                $("#chat").append(`<div class='mensagem usuario'><strong>Você:</strong> ${mensagem}</div>`);
+                $("#pergunta").val("");
 
-            $("#chat").append(`<div class='mensagem usuario'><strong>Você:</strong> ${mensagem}</div>`);
-            $("#pergunta").val("");
+                if(primeiraMensagem){
+                    $("#TituloPrincipal").text("Chatbot de Carros");
+                    primeiraMensagem = false;
+                }
 
-            if(primeiraMensagem){
-                $("#TituloPrincipal").text("Chatbot de Carros");
-                primeiraMensagem = false;
-            }
+                $.ajax({
+                    url: "/chat",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ mensagem: mensagem }),
+                    success: function(data){
+                        let resposta = data.resposta;
 
-            $.ajax({
-                url: "/chat",
-                type: "POST",
-                contentType: "application/json",
-                data: JSON.stringify({ mensagem: mensagem }),
-                success: function(data){
-                    $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> ${data.resposta}</div>`);
-                    $("#chat").scrollTop($("#chat")[0].scrollHeight);
-                },
-                error: function(){
-                    $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> Erro ao processar sua pergunta.</div>`);
+                        // Melhorando a regex para capturar o link de imagem
+                        let imagemUrl = resposta.match(/https?:\/\/[^\s]+(?:\.jpg|\.jpeg|\.png)/);
+
+                        // Se encontrar uma imagem, exibe no card, senão exibe sem a imagem
+                        if (imagemUrl) {
+                            // Limitando o número de opcionais
+                            let opcionais = resposta.match(/🔧 Opcionais: (.*?)(?=\n|$)/);
+                            let opcionaisTexto = opcionais ? opcionais[1].split(",").slice(0, 5).join(", ") : "Nenhum opcional listado.";
+
+                            // Calculando as parcelas com 10% de entrada
+                            let preco = resposta.match(/💸 Preço: R\$ ([\d,\.]+)/);
+                            if (preco) {
+                                preco = parseFloat(preco[1].replace(",", "."));
+                                let entrada = preco * 0.10;
+                                let parcelas = (preco - entrada) / 36;
+                                
+                                // Cria o card com a imagem
+                                $("#chat").append(`
+                                    <div class='mensagem bot'>
+                                        <strong>Bot:</strong>
+                                        <div class="card">
+                                            <img src="${imagemUrl[0]}" alt="Imagem do Veículo" class="imagem-veiculo">
+                                            <div class="info-veiculo">
+                                                <h3>🚗 ${resposta.split("\n")[1]}</h3>
+                                                <p><strong>Ano/Modelo:</strong> ${resposta.split("\n")[2]}</p>
+                                                <p><strong>Preço:</strong> <span class="preco">R$ ${preco.toFixed(2)}</span></p>
+                                                <p><strong>Parcelas (36x):</strong> <span class="parcelas">R$ ${parcelas.toFixed(2)} por mês</span></p>
+                                                <p><strong>Opcionais:</strong> ${opcionaisTexto}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `);
+                            } else {
+                                $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> ${resposta}</div>`);
+                            }
+                        } else {
+                            // Exibe a resposta sem a imagem
+                            $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> ${resposta}</div>`);
+                        }
+
+                        $("#chat").scrollTop($("#chat")[0].scrollHeight);
+                    },
+                    error: function(){
+                        $("#chat").append(`<div class='mensagem bot'><strong>Bot:</strong> Erro ao processar sua pergunta.</div>`);
+                    }
+                });
+            });
+
+            $("#pergunta").keypress(function(e){
+                if(e.which === 13){
+                    $("#enviar").click();
                 }
             });
         });
-
-        $("#pergunta").keypress(function(e){
-            if(e.which === 13){
-                $("#enviar").click();
-            }
-        });
-    });
-</script>
+    </script>
 </body>
 </html>

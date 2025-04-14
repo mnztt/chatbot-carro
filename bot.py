@@ -1,6 +1,7 @@
 import pickle
 import sqlite3
 import re
+import random
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
@@ -78,8 +79,13 @@ def responder(intencao, texto):
         return "❌ Esse carro não possui esse opcional (ou o nome está diferente)."
 
     elif intencao == "interesse_compra":
+        respostas = [
+            "Ótimo! Me envie seu CPF para calcular entrada e parcelas. 😊",
+            "Perfeito, fico feliz que tenha gostado! Me envia seu CPF pra simular o financiamento.",
+            "Show! Me passa seu CPF pra eu calcular a entrada e as parcelas pra você.",
+        ]
         if ultimo_carro:
-            return "Ótimo! Me envie seu CPF para calcular entrada e parcelas. 😊"
+            return random.choice(respostas)
         return "Qual carro você gostou? Me diga o modelo."
 
     elif intencao == "cpf":
@@ -98,10 +104,25 @@ def responder(intencao, texto):
         return "Por favor, selecione um carro antes de enviar o CPF."
 
     elif intencao == "saudacao":
-        return "Olá! Em que posso te ajudar? Você pode perguntar por modelo, preço ou opcionais."
+        respostas = [
+            "Olá! Em que posso te ajudar? Você pode perguntar por modelo, preço ou opcionais.",
+            "Oi! Quer ver algum modelo específico?",
+            "E aí! Está procurando algum carro em especial?",
+            "Olá! Me diga o que você está buscando: modelo, valor ou opcionais?",
+            "Oi! Pode me perguntar sobre carros, valores ou características.",
+            "Seja bem-vindo! Me diga como posso te ajudar com os veículos."
+        ]
+        return random.choice(respostas)
 
     elif intencao == "despedida":
-        return "Até logo! Qualquer coisa, estou por aqui."
+        respostas = [
+            "Até logo! Qualquer coisa, estou por aqui.",
+            "Tchau! Volte sempre que quiser ver mais carros.",
+            "Até mais! Foi um prazer te ajudar.",
+            "Falou! Espero que encontre o carro ideal.",
+            "Nos vemos em breve! 😊"
+        ]
+        return random.choice(respostas)
 
     return "Desculpe, não entendi."
 
@@ -111,27 +132,27 @@ if __name__ == "__main__":
         entrada = input("Você: ").strip()
         if entrada.lower() in ["sair", "exit", "tchau"]:
             print("Bot: Até mais!")
-        break
+            break
 
-    # Detecta CPF
-    if re.fullmatch(r"\d{11}", entrada):
-        intencao = "cpf"
-    else:
-        # Detecta intenção com fallback
-        conn = sqlite3.connect("carros.db")
-        cursor = conn.cursor()
-        cursor.execute("SELECT modelo FROM veiculos")
-        modelos = [m[0].lower() for m in cursor.fetchall()]
-        conn.close()
-
-        if entrada.lower() in modelos:
-            intencao = "busca_modelo"
-        elif "quero esse carro" in entrada.lower():
-            intencao = "interesse_compra"
+        # Detecta CPF
+        if re.fullmatch(r"\d{11}", entrada):
+            intencao = "cpf"
         else:
-            entrada_proc = preprocess(entrada)
-            entrada_vec = vectorizer.transform([entrada_proc])
-            intencao = modelo.predict(entrada_vec)[0]
+            # Detecta intenção com fallback
+            conn = sqlite3.connect("carros.db")
+            cursor = conn.cursor()
+            cursor.execute("SELECT modelo FROM veiculos")
+            modelos = [m[0].lower() for m in cursor.fetchall()]
+            conn.close()
 
-    resposta = responder(intencao, entrada)
-    print("Bot:", resposta)
+            if entrada.lower() in modelos:
+                intencao = "busca_modelo"
+            elif "quero esse carro" in entrada.lower():
+                intencao = "interesse_compra"
+            else:
+                entrada_proc = preprocess(entrada)
+                entrada_vec = vectorizer.transform([entrada_proc])
+                intencao = modelo.predict(entrada_vec)[0]
+
+        resposta = responder(intencao, entrada)
+        print("Bot:", resposta)
