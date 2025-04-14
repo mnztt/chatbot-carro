@@ -53,7 +53,7 @@
                             // Calculando as parcelas com 10% de entrada
                             let preco = resposta.match(/💸 Preço: R\$ ([\d,\.]+)/);
                             if (preco) {
-                                preco = parseFloat(preco[1].replace(",", "."));
+                                preco = parseInt(parseFloat(preco[1].replace(",", "."))*100);
                                 let entrada = preco * 0.10;
                                 let parcelas = (preco - entrada) / 36;
                                 
@@ -64,10 +64,11 @@
                                         <div class="card">
                                             <img src="${imagemUrl[0]}" alt="Imagem do Veículo" class="imagem-veiculo">
                                             <div class="info-veiculo">
-                                                <h3>🚗 ${resposta.split("\n")[1]}</h3>
-                                                <p><strong>Ano/Modelo:</strong> ${resposta.split("\n")[2]}</p>
-                                                <p><strong>Preço:</strong> <span class="preco">R$ ${preco.toFixed(2)}</span></p>
-                                                <p><strong>Parcelas (36x):</strong> <span class="parcelas">R$ ${parcelas.toFixed(2)} por mês</span></p>
+                                                <h3>${resposta.split("\n")[1]}</h3>
+                                                <p> ${resposta.split("\n")[2]}</p>
+                                                <p><strong>Preço:</strong> <span class="preco">R$ ${preco*10}</span></p>
+                                                <p><strong>Parcelas (36x):</strong> <span class="parcelas">R$ ${parcelas.toFixed(2)*10} por mês</span></p>
+                                                <p><strong>Entrada: </strong> R$ ${preco}</</p>
                                                 <p><strong>Opcionais:</strong> ${opcionaisTexto}</p>
                                             </div>
                                         </div>

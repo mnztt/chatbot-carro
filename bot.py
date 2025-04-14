@@ -32,9 +32,9 @@ def responder(intencao, texto):
                 opcionais = [r[0] for r in cursor.fetchall()]
                 return f"""📸 {carro[1]}
 🚗 {carro[2]} - {carro[3]} ({carro[4]})
-📅 Ano/Modelo: {carro[5]}
-💸 Preço: R$ {carro[6]}
-📍 KM: {carro[7]}
+📅 Ano/Modelo: {carro[4]}
+💸 Preço: R$ {carro[5]}
+📍 KM: {carro[6]}
 🔧 Opcionais: {", ".join(opcionais) if opcionais else "Nenhum"}"""
 
         return "❌ Não encontrei esse modelo."
@@ -48,10 +48,10 @@ def responder(intencao, texto):
             encontrados = []
             for carro in carros:
                 try:
-                    preco_str = re.sub(r"[^\d]", "", carro[6])
+                    preco_str = re.sub(r"[^\d]", "", carro[5])
                     preco = int(preco_str)
                     if preco <= limite:
-                        encontrados.append(f"{carro[2]} - R$ {carro[6]}")
+                        encontrados.append(f"{carro[2]} - R$ {carro[5]}")
                 except ValueError:
                     continue
             if encontrados:
@@ -91,14 +91,14 @@ def responder(intencao, texto):
     elif intencao == "cpf":
         if ultimo_carro:
             try:
-                preco_str = re.sub(r"[^\d]", "", ultimo_carro[6])
+                preco_str = ultimo_carro[5].replace(".", "").replace(",", ".")
                 preco = float(preco_str)
-                entrada = preco * 0.20
+                entrada = preco * 0.10
                 parcela = (preco - entrada) / 36
                 return f"""✅ Simulação para {ultimo_carro[2]}:
-📄 CPF: {texto}
-💸 Entrada: R$ {entrada:,.2f}
-📆 Parcelas: 36x de R$ {parcela:,.2f}"""
+    📄 CPF: {texto}
+    💸 Entrada: R$ {entrada:,.2f}
+    📆 Parcelas: 36x de R$ {parcela:,.2f}"""
             except ValueError:
                 return "Erro ao calcular parcelas. Verifique os dados do carro."
         return "Por favor, selecione um carro antes de enviar o CPF."
