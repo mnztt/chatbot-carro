@@ -1,29 +1,30 @@
 import json
 import pickle
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import LabelEncoder
+from sentence_transformers import SentenceTransformer
 
-lemmatizer = WordNetLemmatizer()
-
-def preprocess(texto):
-    tokens = word_tokenize(texto.lower())
-    return " ".join([lemmatizer.lemmatize(t, pos='v') for t in tokens])
-
+# Carrega o dataset
 with open("dataset_completo.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 frases = [item["frase"] for item in dataset]
 intencoes = [item["intencao"] for item in dataset]
-frases_proc = [preprocess(f) for f in frases]
 
-vectorizer = CountVectorizer()
-X = vectorizer.fit_transform(frases_proc)
-modelo = MultinomialNB()
-modelo.fit(X, intencoes)
+# Cria os embeddings das frases
+modelo_emb = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+X = modelo_emb.encode(frases)
 
+# Codifica as intenções em números
+label_encoder = LabelEncoder()
+y = label_encoder.fit_transform(intencoes)
+
+# Treina o classificador Logistic Regression
+modelo_clf = LogisticRegression(max_iter=1000)
+modelo_clf.fit(X, y)
+
+# Salva tudo para usar depois
 with open("modelo.pkl", "wb") as f:
-    pickle.dump((vectorizer, modelo), f)
+    pickle.dump((modelo_emb, modelo_clf, label_encoder), f)
 
-print("✅ Modelo reentreinado com sucesso!")
+print("✅ Modelo treinado e salvo com sucesso!")

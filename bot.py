@@ -5,9 +5,9 @@ import random
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-# Carrega modelo treinado
+# Carrega modelo e encoder de intenções
 with open("modelo.pkl", "rb") as f:
-    vectorizer, modelo = pickle.load(f)
+    modelo_emb, modelo_clf, label_encoder = pickle.load(f)
 
 lemmatizer = WordNetLemmatizer()
 ultimo_carro = None  # Memória de curto prazo
@@ -96,9 +96,9 @@ def responder(intencao, texto):
                 entrada = preco * 0.10
                 parcela = (preco - entrada) / 36
                 return f"""✅ Simulação para {ultimo_carro[2]}:
-    📄 CPF: {texto}
-    💸 Entrada: R$ {entrada:,.2f}
-    📆 Parcelas: 36x de R$ {parcela:,.2f}"""
+📄 CPF: {texto}
+💸 Entrada: R$ {entrada:,.2f}
+📆 Parcelas: 36x de R$ {parcela:,.2f}"""
             except ValueError:
                 return "Erro ao calcular parcelas. Verifique os dados do carro."
         return "Por favor, selecione um carro antes de enviar o CPF."
@@ -126,33 +126,5 @@ def responder(intencao, texto):
 
     return "Desculpe, não entendi."
 
-# Loop principal
-if __name__ == "__main__":
-    while True:
-        entrada = input("Você: ").strip()
-        if entrada.lower() in ["sair", "exit", "tchau"]:
-            print("Bot: Até mais!")
-            break
-
-        # Detecta CPF
-        if re.fullmatch(r"\d{11}", entrada):
-            intencao = "cpf"
-        else:
-            # Detecta intenção com fallback
-            conn = sqlite3.connect("carros.db")
-            cursor = conn.cursor()
-            cursor.execute("SELECT modelo FROM veiculos")
-            modelos = [m[0].lower() for m in cursor.fetchall()]
-            conn.close()
-
-            if entrada.lower() in modelos:
-                intencao = "busca_modelo"
-            elif "quero esse carro" in entrada.lower():
-                intencao = "interesse_compra"
-            else:
-                entrada_proc = preprocess(entrada)
-                entrada_vec = vectorizer.transform([entrada_proc])
-                intencao = modelo.predict(entrada_vec)[0]
-
-        resposta = responder(intencao, entrada)
-        print("Bot:", resposta)
+# Exportações para uso externo (como no app.py)
+__all__ = ["modelo_emb", "modelo_clf", "label_encoder", "preprocess", "responder"]

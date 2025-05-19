@@ -8,3 +8,6 @@ requests
 beautifulsoup4
 lxml
 python-dotenv # se usar variáveis de ambiente
+transformers
+torch
+sentence-transformers

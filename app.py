@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
 import re
-from bot import preprocess, responder, modelo, vectorizer
+from bot import preprocess, responder, modelo_emb, modelo_clf, label_encoder
 
 app = Flask(__name__)
 
@@ -28,11 +28,11 @@ def chat():
             intencao = "interesse_compra"
         else:
             entrada_proc = preprocess(user_input)
-            entrada_vec = vectorizer.transform([entrada_proc])
-            intencao = modelo.predict(entrada_vec)[0]
+            entrada_vec = modelo_emb.encode([entrada_proc])
+            intencao_cod = modelo_clf.predict(entrada_vec)[0]  # Changed from modelo to modelo_clf
+            intencao = label_encoder.inverse_transform([intencao_cod])[0]
 
     resposta = responder(intencao, user_input)
-    print(resposta)
     return jsonify({"resposta": resposta})
 
 if __name__ == "__main__":
